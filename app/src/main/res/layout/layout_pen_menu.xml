@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_toolbar"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvPen"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:background="#D0D0D0"
+            android:text="画笔"
+            android:singleLine="true"
+            android:textColor="#000000" />
+
+        <!-- 稍微加一点左边距，让两个按钮不要贴太紧 -->
+        <TextView
+            android:id="@+id/tvEraser"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="橡皮擦"
+            android:singleLine="true"
+            android:textColor="#666666" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="笔迹粗细"
+        android:textSize="12sp"
+        android:textColor="#666666"/>
+
+    <!-- 粗细调节滑块和数值显示 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp">
+
+        <SeekBar
+            android:id="@+id/seekBarWidth"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="8" />
+
+        <!-- 显示粗细数值 -->
+        <TextView
+            android:id="@+id/tvWidthValue"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:gravity="end|center_vertical"
+            android:text="8px"
+            android:textSize="14sp"
+            android:textColor="#333333" />
+    </LinearLayout>
+</LinearLayout>

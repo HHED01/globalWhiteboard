@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- 90% 不透明度的浅灰色，模拟毛玻璃 -->
+    <solid android:color="#E6F2F2F2" />
+    <!-- 高度的一半，实现圆角胶囊形状 -->
+    <corners android:radius="32dp" />
+</shape>

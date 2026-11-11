@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.globalwhiteboard.ToolbarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbarRoot"
+    android:layout_width="wrap_content"
+    android:layout_height="60dp"
+    android:background="@drawable/bg_toolbar"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingHorizontal="16dp">
+
+    <!-- 加号/减号图标（折叠/展开） -->
+    <ImageView
+        android:background="@drawable/bg_icon_circle"
+        android:id="@+id/btnEye"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_minus_circle"
+    android:padding="8dp"
+    android:scaleType="fitCenter" />
+
+    <!-- 撤销 -->
+    <ImageView
+        android:background="@drawable/bg_icon_circle"
+        android:id="@+id/btnUndo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_undo"
+        android:padding="8dp" />
+
+    <!-- 重做 -->
+    <ImageView
+        android:background="@drawable/bg_icon_circle"
+        android:id="@+id/btnRedo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_redo"
+        android:padding="8dp" />
+
+    <!-- 清空（垃圾桶） -->
+    <ImageView
+        android:background="@drawable/bg_icon_circle"
+        android:id="@+id/btnClear"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_clear"
+        android:padding="8dp" />
+
+    <!-- 调色盘 -->
+    <ImageView
+        android:background="@drawable/bg_icon_circle"
+        android:id="@+id/btnColor"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_color"
+        android:padding="8dp" />
+
+    <!-- 画笔，二级菜单 -->
+    <ImageView
+        android:background="@drawable/bg_icon_circle"
+        android:id="@+id/btnPen"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_pen"
+        android:padding="8dp" />
+
+    <!-- 穿透模式切换 -->
+    <ImageView
+        android:background="@drawable/bg_icon_circle"
+        android:id="@+id/btnMode"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_mode"
+    android:padding="8dp" />
+
+    <!-- 设置 -->
+    <ImageView
+        android:background="@drawable/bg_icon_circle"
+        android:id="@+id/btnSettings"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_settings"
+        android:padding="8dp" />
+</com.example.globalwhiteboard.ToolbarLayout>

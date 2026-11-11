@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_toolbar"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择颜色"
+        android:textSize="12sp"
+        android:layout_marginBottom="12dp"
+        android:textColor="#666666"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="4">
+
+        <!-- 第 1 行 -->
+        <View android:id="@+id/cRed" android:layout_width="32dp" android:layout_height="32dp" android:layout_margin="6dp" android:background="@drawable/bg_color_circle" android:backgroundTint="#FF3B30" android:tag="#FF3B30" />
+        <View android:id="@+id/cOrange" android:layout_width="32dp" android:layout_height="32dp" android:layout_margin="6dp" android:background="@drawable/bg_color_circle" android:backgroundTint="#FF9500" android:tag="#FF9500" />
+        <View android:id="@+id/cYellow" android:layout_width="32dp" android:layout_height="32dp" android:layout_margin="6dp" android:background="@drawable/bg_color_circle" android:backgroundTint="#FFCC00" android:tag="#FFCC00" />
+        <View android:id="@+id/cGreen" android:layout_width="32dp" android:layout_height="32dp" android:layout_margin="6dp" android:background="@drawable/bg_color_circle" android:backgroundTint="#34C759" android:tag="#34C759" />
+
+        <!-- 第 2 行 -->
+        <View android:id="@+id/cCyan" android:layout_width="32dp" android:layout_height="32dp" android:layout_margin="6dp" android:background="@drawable/bg_color_circle" android:backgroundTint="#32ADE6" android:tag="#32ADE6" />
+        <View android:id="@+id/cBlue" android:layout_width="32dp" android:layout_height="32dp" android:layout_margin="6dp" android:background="@drawable/bg_color_circle" android:backgroundTint="#007AFF" android:tag="#007AFF" />
+        <View android:id="@+id/cPurple" android:layout_width="32dp" android:layout_height="32dp" android:layout_margin="6dp" android:background="@drawable/bg_color_circle" android:backgroundTint="#AF52DE" android:tag="#AF52DE" />
+        <View android:id="@+id/cPink" android:layout_width="32dp" android:layout_height="32dp" android:layout_margin="6dp" android:background="@drawable/bg_color_circle" android:backgroundTint="#FF2D55" android:tag="#FF2D55" />
+
+        <!-- 第 3 行 (深色系) -->
+        <View android:id="@+id/cBlack" android:layout_width="32dp" android:layout_height="32dp" android:layout_margin="6dp" android:background="@drawable/bg_color_circle" android:backgroundTint="#000000" android:tag="#000000" />
+        <View android:id="@+id/cGray" android:layout_width="32dp" android:layout_height="32dp" android:layout_margin="6dp" android:background="@drawable/bg_color_circle" android:backgroundTint="#8E8E93" android:tag="#8E8E93" />
+        <View android:id="@+id/cBrown" android:layout_width="32dp" android:layout_height="32dp" android:layout_margin="6dp" android:background="@drawable/bg_color_circle" android:backgroundTint="#795548" android:tag="#795548" />
+        <View android:id="@+id/cNavy" android:layout_width="32dp" android:layout_height="32dp" android:layout_margin="6dp" android:background="@drawable/bg_color_circle" android:backgroundTint="#1A237E" android:tag="#1A237E" />
+
+        <!-- 第 4 行 (浅色/马卡龙系) -->
+        <View android:id="@+id/cWhite" android:layout_width="32dp" android:layout_height="32dp" android:layout_margin="6dp" android:background="@drawable/bg_color_circle" android:backgroundTint="#FFFFFF" android:tag="#FFFFFF" />
+        <View android:id="@+id/cLightGreen" android:layout_width="32dp" android:layout_height="32dp" android:layout_margin="6dp" android:background="@drawable/bg_color_circle" android:backgroundTint="#A5D6A7" android:tag="#A5D6A7" />
+        <View android:id="@+id/cLightBlue" android:layout_width="32dp" android:layout_height="32dp" android:layout_margin="6dp" android:background="@drawable/bg_color_circle" android:backgroundTint="#90CAF9" android:tag="#90CAF9" />
+        <View android:id="@+id/cRose" android:layout_width="32dp" android:layout_height="32dp" android:layout_margin="6dp" android:background="@drawable/bg_color_circle" android:backgroundTint="#F48FB1" android:tag="#F48FB1" />
+
+    </GridLayout>
+</LinearLayout>
